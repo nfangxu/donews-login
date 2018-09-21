@@ -2,7 +2,7 @@
     "name": "nfangxu/donews-user",
     "description": "check user login",
     "keywords": ["laravel","composer"],
-    "homepage": "https://github.com/binbinmax/composer-packagist-test",
+    "homepage": "https://packagist.org/packages/nfangxu/donews-user",
     "type": "library",
     "version" : "v1.0",
     "license": "MIT",
