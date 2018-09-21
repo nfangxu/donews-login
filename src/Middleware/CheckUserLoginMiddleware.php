@@ -41,7 +41,7 @@ class CheckUserLoginMiddleware
             throw new UserLoginException("This account is already logged in elsewhere", 410);
         }
 
-        $redis->user = $user;
+        $request->user = $user;
 
         return $next($request);
     }
