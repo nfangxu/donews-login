@@ -8,6 +8,8 @@
 
 namespace Fangxu;
 
+use Illuminate\Support\Facades\Redis;
+
 class Tools
 {
     protected static function config()
@@ -19,7 +21,11 @@ class Tools
 
     public static function getToken($user)
     {
-        return static::encode(json_encode($user), static::config()["key"]);
+        $token = static::encode(json_encode($user), static::config()["key"]);
+        
+        Redis::set(request("app_id") . ":login:" . $user->id, $token);
+
+        return $token;
     }
 
     protected static function encode($data, $key)
