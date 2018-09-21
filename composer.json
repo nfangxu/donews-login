@@ -4,7 +4,7 @@
     "keywords": ["laravel","composer"],
     "homepage": "https://packagist.org/packages/nfangxu/donews-user",
     "type": "library",
-    "version" : "v1.0",
+    "version" : "v1.0.1",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -12,7 +12,6 @@
         }
     },
     "require" : {},
-    "minimum-stability": "dev",
     "authors": [
         {
           "name": "nfangxu",
